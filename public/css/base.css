@@ -147,6 +147,31 @@ section {
   font-size: 30px;
 }
 
+.accordeon {
+  margin: 3% 0;
+}
+
+.accordeon button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordeon button h2 {
+  width: 85%;
+}
+
+.accordeon button span {
+  font-size: 22px;
+  color: #df9c0c;
+}
+
 @media (max-width: 450px) {
   #benefits {
     height: 135vh;
