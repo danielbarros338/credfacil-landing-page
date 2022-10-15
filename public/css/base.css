@@ -114,6 +114,7 @@ section {
 }
 
 .info-know-how {
+  position: relative;
   padding: 15px;
   border-radius: 0 30px 30px 30px;
   background-color: #df9c0c;
@@ -127,6 +128,23 @@ section {
 
 .format-text {
   text-align: justify;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  top: -25px;
+  left: -25px;
+}
+
+.icon i {
+  font-size: 30px;
 }
 
 @media (max-width: 450px) {
