@@ -148,7 +148,7 @@ section {
 }
 
 .accordeon {
-  margin: 3% 0;
+  overflow: hidden;
 }
 
 .accordeon button {
@@ -161,15 +161,22 @@ section {
   color: #fff;
   cursor: pointer;
   text-align: left;
+  z-index: 5;
 }
 
 .accordeon button h2 {
   width: 85%;
+  margin: 4% !important;
 }
 
 .accordeon button span {
   font-size: 22px;
   color: #df9c0c;
+}
+
+.accordeon article {
+  display: none;
+  overflow: hidden;
 }
 
 @media (max-width: 450px) {
