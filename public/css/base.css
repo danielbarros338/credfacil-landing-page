@@ -179,6 +179,10 @@ section {
   overflow: hidden;
 }
 
+.accordeon span i {
+  transition: 1s ease all;
+}
+
 @media (max-width: 450px) {
   #benefits {
     height: 135vh;
