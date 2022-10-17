@@ -1,19 +1,21 @@
 {
   "name": "credfacil",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Landing page da Cred Fácil",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danielbarros338/credfacil-landing-page.git"
-  },
-  "author": "danielbarros338 <danielbarros338@gmail.com>",
+  "author": "Daniel Moura Barros",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danielbarros338/credfacil-landing-page/issues"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   },
-  "homepage": "https://github.com/danielbarros338/credfacil-landing-page#readme"
+  "engines": {
+    "node": "16.x"
+  }
 }
