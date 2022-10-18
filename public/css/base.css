@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: #070930;
+  --color-credfacil-primary: #070930;
   --color-bordergrey: #aeaeae;
 
   font-family: "Roboto", sans-serif;
@@ -18,7 +18,7 @@
   padding: 0;
 }
 body {
-  color: #fff;
+  color: #fff !important;
 }
 section {
   padding: 0 10%;
@@ -34,7 +34,7 @@ footer {
   justify-content: start;
   align-content: space-around;
   flex-wrap: wrap;
-  background-color: var(--color-primary);
+  background-color: var(--color-credfacil-primary);
 }
 
 #benefits {
@@ -67,11 +67,11 @@ footer {
 }
 
 #fgts-explanation span {
-  color: var(--color-primary);
+  color: var(--color-credfacil-primary);
 }
 
 #know-how span {
-  color: var(--color-primary);
+  color: var(--color-credfacil-primary);
 }
 
 #head-land h1 {
@@ -85,7 +85,7 @@ footer {
 }
 
 #questions {
-  background-color: var(--color-primary);
+  background-color: var(--color-credfacil-primary);
 }
 
 #questions h2 {
@@ -164,7 +164,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-primary);
+  background: var(--color-credfacil-primary);
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -220,7 +220,7 @@ footer {
 
 @media (max-width: 450px) {
   #benefits {
-    height: 135vh;
+    height: 200vh;
   }
   #head-land {
     height: 110vh;
