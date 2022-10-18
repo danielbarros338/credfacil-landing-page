@@ -23,6 +23,11 @@ body {
 section {
   padding: 0 10%;
 }
+footer {
+  padding: 10%;
+  background: #1b1c30;
+  color: #aeaeae;
+}
 
 #head-land {
   display: flex;
@@ -227,6 +232,9 @@ section {
   #explain {
     height: 75vh;
     padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  #questions {
     padding-bottom: 4%;
   }
 }
