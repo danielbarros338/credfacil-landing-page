@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"); */
-
 @font-face {
   font-family: Roboto;
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
@@ -7,8 +5,12 @@
 }
 
 :root {
-  --color-credfacil-primary: #070930;
+  --color-credfacil-primary: #0b0731;
   --color-bordergrey: #aeaeae;
+  --color-footer: #1b1c30;
+  --color-orange: #df9c0c;
+  --color-whatsapp-green: #1ea34f;
+  --color-grey: #414141;
 
   font-family: "Roboto", sans-serif;
 }
@@ -21,20 +23,12 @@ body {
   color: #fff !important;
 }
 section {
-  padding: 0 10%;
+  padding: 0 8%;
 }
 footer {
   padding: 10%;
-  background: #1b1c30;
+  background-color: var(--color-footer);
   color: #aeaeae;
-}
-
-#head-land {
-  display: flex;
-  justify-content: start;
-  align-content: space-around;
-  flex-wrap: wrap;
-  background-color: var(--color-credfacil-primary);
 }
 
 #benefits {
@@ -42,14 +36,40 @@ footer {
   flex-wrap: wrap;
   align-content: space-around;
 }
-
 #explain {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
-
+#explain {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+#fgts-explanation {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-image: url("./../images/woman.avif");
+  background-size: cover;
+  color: var(--color-credfacil-primary);
+  padding: 5% 3%;
+}
+#head-land {
+  display: flex;
+  justify-content: start;
+  align-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-credfacil-primary);
+}
+#head-land h1 {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+#head-land h1 span,
+#head-land h2 span {
+  color: var(--color-orange);
+}
 #know-how {
   display: flex;
   flex-wrap: wrap;
@@ -57,49 +77,17 @@ footer {
   background-image: url("./../images/manPhone.avif");
   background-size: cover;
 }
-
-#fgts-explanation {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  background-image: url("./../images/womanCard.avif");
-  background-size: cover;
-}
-
-#fgts-explanation span {
-  color: var(--color-credfacil-primary);
-}
-
 #know-how span {
   color: var(--color-credfacil-primary);
 }
-
-#head-land h1 {
-  font-weight: 900;
-  font-size: 2.3rem;
-}
-
-#head-land h1 span,
-#head-land h2 span {
-  color: #df9c0c;
-}
-
 #questions {
   background-color: var(--color-credfacil-primary);
 }
-
 #questions h2 {
   margin: 10% 0;
 }
-
 #questions section {
   padding: 0;
-}
-
-#questions img {
-  margin-top: 10%;
-  border: none;
-  background: none;
 }
 #wpp-fixed-link {
   position: fixed;
@@ -113,73 +101,14 @@ footer {
   padding: 4%;
   border-radius: 50px;
   border: none;
-  background-color: #1ea34f;
+  background-color: var(--color-whatsapp-green);
   color: #fff;
   font-size: 20px;
-}
-
-.intersection {
-  background-color: #fff;
-  color: #414141;
-}
-
-.sideborder {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  height: 80%;
-  padding: 0 5%;
-  border-left: 1px solid var(--color-bordergrey);
-}
-
-.color-box {
-  position: absolute;
-  height: 7px;
-  width: 7px;
-  background-color: var(--color-bordergrey);
-  top: 0;
-  left: 0;
-}
-
-.info-know-how {
-  position: relative;
-  padding: 15px;
-  border-radius: 0 30px 30px 30px;
-  background-color: #df9c0c;
-  color: #fff;
-}
-
-.info-know-how h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.format-text {
-  text-align: justify;
-}
-
-.icon {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-credfacil-primary);
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  top: -25px;
-  left: -25px;
-}
-
-.icon i {
-  font-size: 30px;
 }
 
 .accordeon {
   overflow: hidden;
 }
-
 .accordeon button {
   display: flex;
   flex-wrap: nowrap;
@@ -192,50 +121,105 @@ footer {
   text-align: left;
   z-index: 5;
 }
-
 .accordeon button h2 {
   width: 85%;
   margin: 4% !important;
 }
-
 .accordeon button span {
   font-size: 22px;
-  color: #df9c0c;
+  color: var(--color-orange);
 }
-
 .accordeon article {
   display: none;
   overflow: hidden;
 }
-
 .accordeon span i {
   transition: 1s ease all;
 }
-
+.color-box {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: var(--color-bordergrey);
+  top: 0;
+  left: 0;
+}
+.cr-item p,
+.cr-item li {
+  text-align: justify;
+}
+.format-text {
+  text-align: justify;
+}
+.icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-credfacil-primary);
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  top: -25px;
+  left: -25px;
+}
+.icon i {
+  font-size: 30px;
+}
 .img-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+.intersection {
+  background-color: #fff;
+  color: var(--color-grey);
+}
+.info-know-how {
+  position: relative;
+  padding: 15px;
+  border-radius: 0 30px 30px 30px;
+  background-color: var(--color-orange);
+  color: #fff;
+}
+.info-know-how h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sideborder {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 80%;
+  padding: 0 5%;
+  border-left: 1px solid var(--color-bordergrey);
+}
+.width-div {
+  width: 75%;
+}
 
 @media (max-width: 450px) {
-  #benefits {
-    height: 200vh;
-  }
   #head-land {
     height: 110vh;
   }
-  #know-how,
-  #fgts-explanation {
+  #know-how {
     height: 100vh;
   }
-  #explain {
-    height: 75vh;
-    padding-top: 4%;
-    padding-bottom: 4%;
+  #fgts-explanation {
+    min-height: 100vh;
   }
   #questions {
     padding-bottom: 4%;
+  }
+  #questions img {
+    margin-top: 10%;
+    border: none;
+    background: none;
+  }
+
+  .info-know-how {
+    margin: 5% 0;
   }
 }
 
@@ -245,19 +229,64 @@ footer {
     width: 50%;
     text-align: left;
   }
-  #fgts-explanation h4 {
+  #fgts-explanation h4,
+  #know-how h4 {
     width: 51%;
     text-align: left;
   }
-  #know-how,
-  #benefits {
+  #know-how h2 {
+    width: 60%;
+  }
+  #know-how {
     height: 200vh;
   }
-  #head-land,
-  #explain {
+  #head-land {
+    height: 150vh;
+  }
+  #benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #benefits h2 {
+    width: 100%;
+  }
+
+  .sideborder {
+    height: 60%;
+  }
+  .info-know-how {
+    width: 40%;
+    margin: 3% 0;
+  }
+}
+
+@media (min-width: 700px) {
+  #head-land h1,
+  #fgts-explanation h2 {
+    width: 70%;
+    text-align: left;
+  }
+  #head-land {
     height: 100vh;
   }
-  #fgts-explanation {
-    height: 150vh;
+  #know-how {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 900px) {
+  #head-land {
+    height: 100vh;
+  }
+  #head-land img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .info-know-how {
+    width: 20%;
   }
 }
