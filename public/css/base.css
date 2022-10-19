@@ -26,7 +26,7 @@ section {
   padding: 0 8%;
 }
 footer {
-  padding: 10%;
+  padding: 2%;
   background-color: var(--color-footer);
   color: #aeaeae;
 }
@@ -82,6 +82,7 @@ footer {
 }
 #questions {
   background-color: var(--color-credfacil-primary);
+  padding-bottom: 4%;
 }
 #questions h2 {
   margin: 10% 0;
@@ -89,21 +90,34 @@ footer {
 #questions section {
   padding: 0;
 }
+#simulator {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color-credfacil-primary);
+  color: #fff;
+  border-radius: 12px;
+}
 #wpp-fixed-link {
   position: fixed;
   bottom: 10px;
   right: 10px;
   cursor: pointer;
 }
-#wpp-simulation {
-  width: 90%;
-  margin-top: 10%;
-  padding: 4%;
+#wpp-simulator-inp {
+  width: 100%;
+  padding: 2%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+#wpp-btn {
+  padding: 3%;
   border-radius: 50px;
   border: none;
   background-color: var(--color-whatsapp-green);
   color: #fff;
-  font-size: 20px;
+  width: 100%;
 }
 
 .accordeon {
@@ -135,6 +149,15 @@ footer {
 }
 .accordeon span i {
   transition: 1s ease all;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 65px;
+}
+.btn-dropdown {
+  width: 100%;
 }
 .color-box {
   position: absolute;
@@ -198,6 +221,16 @@ footer {
 .width-div {
   width: 75%;
 }
+.wpp-simulation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-whatsapp-green);
+  color: #fff;
+}
 
 @media (max-width: 450px) {
   #head-land {
@@ -209,15 +242,22 @@ footer {
   #fgts-explanation {
     min-height: 100vh;
   }
-  #questions {
-    padding-bottom: 4%;
-  }
   #questions img {
     margin-top: 10%;
     border: none;
     background: none;
   }
+  #fgts-explanation h2 {
+    margin-bottom: 10%;
+  }
+  #fgts-explanation h4 {
+    margin: 10% 0;
+  }
 
+  .wpp-simulation {
+    width: 100%;
+    font-size: 20px;
+  }
   .info-know-how {
     margin: 5% 0;
   }
@@ -241,7 +281,7 @@ footer {
     height: 200vh;
   }
   #head-land {
-    height: 150vh;
+    height: 160vh;
   }
   #benefits {
     display: flex;
@@ -251,7 +291,17 @@ footer {
   #benefits h2 {
     width: 100%;
   }
+  #fgts-explanation h2 {
+    margin-bottom: 5%;
+  }
+  #fgts-explanation h4 {
+    margin: 5% 0;
+  }
 
+  .wpp-simulation {
+    width: 100%;
+    font-size: 23px;
+  }
   .sideborder {
     height: 60%;
   }
@@ -269,9 +319,43 @@ footer {
   }
   #head-land {
     height: 100vh;
+    padding-bottom: 2%;
   }
   #know-how {
     height: 120vh;
+  }
+  .wpp-simulation {
+    width: 90%;
+  }
+  #know-how {
+    position: relative;
+  }
+  #know-how h2 {
+    position: absolute;
+    top: 8px;
+    left: 8%;
+  }
+  #know-how h4 {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    width: 30%;
+  }
+  #fgts-explanation {
+    position: relative;
+  }
+  #fgts-explanation h2 {
+    margin-bottom: 3%;
+  }
+  #fgts-explanation h4 {
+    margin: 3% 0;
+  }
+
+  .carousel-element {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 70% !important;
   }
 }
 
@@ -282,6 +366,48 @@ footer {
   #head-land img {
     height: 250px;
     width: 250px;
+  }
+  #know-how h4 {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    width: 30%;
+  }
+
+  #fgts-explanation h2 {
+    margin-bottom: 5%;
+  }
+  #fgts-explanation h4 {
+    margin: 5% 0;
+  }
+
+  .text-wpp,
+  .text-wpp h2,
+  .text-wpp p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  #explain {
+    flex-wrap: nowrap;
+  }
+  #simulator {
+    width: 40%;
+  }
+
+  .sideborder {
+    width: 60%;
+  }
+  .carousel-element {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-element {
+    width: 50% !important;
   }
 }
 
