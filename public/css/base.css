@@ -411,6 +411,9 @@ input::-webkit-inner-spin-button {
   .carousel-element {
     width: 60% !important;
   }
+  .info-know-how {
+    width: 20%;
+  }
 }
 
 @media (min-width: 1200px) {
