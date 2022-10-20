@@ -81,7 +81,7 @@ input::-webkit-inner-spin-button {
 #know-how {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: center;
   background-image: url("./../images/manPhone.avif");
   background-size: cover;
 }
@@ -244,6 +244,10 @@ input::-webkit-inner-spin-button {
   #head-land {
     height: 110vh;
   }
+  #head-land img {
+    width: 300px;
+    height: 150px;
+  }
   #know-how {
     height: 100vh;
   }
@@ -251,7 +255,6 @@ input::-webkit-inner-spin-button {
     min-height: 100vh;
   }
   #questions img {
-    margin-top: 10%;
     border: none;
     background: none;
   }
@@ -373,7 +376,7 @@ input::-webkit-inner-spin-button {
   }
   #head-land img {
     height: 250px;
-    width: 250px;
+    width: 650px;
   }
   #know-how h4 {
     position: absolute;
@@ -381,7 +384,6 @@ input::-webkit-inner-spin-button {
     left: 8%;
     width: 30%;
   }
-
   #fgts-explanation h2 {
     margin-bottom: 5%;
   }
