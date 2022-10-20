@@ -53,6 +53,41 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "668117644703735");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=668117644703735&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <main id="app">
@@ -168,10 +203,7 @@
             anualmente direto do seu saldo FGTS.
           </p>
         </article>
-        <form
-          id="want-hire"
-          class="btn-container mb-3"
-        >
+        <form id="want-hire" class="btn-container mb-3">
           <button class="wpp-simulation" type="submit">
             <i class="fa-brands fa-whatsapp"></i>&nbsp;Quero contratar!
           </button>
@@ -519,16 +551,16 @@
             </p>
           </article>
         </section>
-        <form
-          id="talk-with-us"
-          class="btn-container mt-3"
-        >
+        <form id="talk-with-us" class="btn-container mt-3">
           <button class="wpp-simulation" type="submit">
             <i class="fa-brands fa-whatsapp"></i>&nbsp;Fale conosco agora!
           </button>
         </form>
       </section>
-      <a id="wpp-fixed-link" href="https://wa.me/558173166645?text=Olá!%20Vim%20da%20página%20da%20CredFácil%20Consig%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20empréstimo%20FGTS.">
+      <a
+        id="wpp-fixed-link"
+        href="https://wa.me/558173166645?text=Olá!%20Vim%20da%20página%20da%20CredFácil%20Consig%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20empréstimo%20FGTS."
+      >
         <img
           src="./images/whatsapp.png"
           alt="Whatsapp Logo"
