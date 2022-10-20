@@ -63,7 +63,7 @@ wantHire.addEventListener("submit", (e) => {
 
 talkWithUs.addEventListener("submit", (e) => {
   e.preventDefault();
-  const wppUrl = "https://wa.me/558173166645?text=Gostaria%20de%20conhecer%20mais%20sobre%20a%20CredFácil"
+  const wppUrl = "https://wa.me/558173166645?text=Olá!%20Vim%20da%20página%20da%20CredFácil%20Consig%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20empréstimo%20FGTS."
   window.open(wppUrl);
 })
 
